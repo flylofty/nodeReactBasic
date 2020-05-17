@@ -22,7 +22,7 @@ mongoose.connect(config.mongURI, {
 app.get('/', (req, res) => res.send('Hello World! 안녕하세요 새해복 많이 받으세요.'));
 
 //회원가입을 위한 라우터.
-app.post('/api/suers/register', (req, res) => {
+app.post('/api/users/register', (req, res) => {
     //회원 가입 할 때 필요한 정보들을 client에서 가져오면
     //그것들을 데이터 베이스에 넣어준다.
 
