@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 //https://ant.design/ 참고!
 import 'antd/dist/antd.css';
 import { applyMiddleware, createStore } from 'redux';
@@ -22,8 +22,8 @@ ReactDOM.render(
   <Provider
       store={createStoreWithMiddleware(Reducer,
         window.__REDUX_DEVTOOLS_EXTENSION__ &&
-        Window.__REDUX_DEVTOOLS_EXTENSION__()
-        )}
+        window.__REDUX_DEVTOOLS_EXTENSION__()
+      )}
   >
       <App />
   </Provider>
